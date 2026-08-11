@@ -16,6 +16,13 @@ app.get('/aluno/:nome', (req, res) => {
     res.send(`ola, ${nome}`)
 })
 
+app.get('/aluno/:a/:b', (req, res) => {
+    const a = Number(req.params.a)
+    const b = Number(req.params.b)
+    const resultado = a + b
+    res.send(`ola, ${resultado}`)
+})
+
 app.listen(3000, () => {
     console.log('servidor rodando em http://localhost:3000')
 })

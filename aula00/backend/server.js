@@ -1,8 +1,19 @@
 const express = require("express")
 const app =express()
 
+//rota raiz a primeira
 app.get('/', (req, res) => {
-    res.send("Hello world!Este é o meu priemiro servidor backend funcionando")
+    res.send("bem vindo pae")
+})
+//rota dps da raiz 
+app.get('/aluno', (req, res) => {
+    res.send('rota ok')
+})
+
+//rota dinamica
+app.get('/aluno/:nome', (req, res) => {
+    const nome = req.params.nome
+    res.send(`ola, ${nome}`)
 })
 
 app.listen(3000, () => {

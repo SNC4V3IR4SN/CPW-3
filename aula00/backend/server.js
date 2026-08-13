@@ -8,9 +8,14 @@ app.use((req,res, next) => {
 
 //rota raiz a primeira
 app.get('/', (req, res) => { 
-    res.send(`<h1>Menu</h1>
+    res.send(`<h1>Bem vindo pae</h1>
+        <h2>Menu</h2>
         <a href="aluno/gabriel"> Ir para aluno</a><br>
-        <a href="/status"> Ir para status</a>`)
+        <a href="/status"> Ir para status</a><br>
+        <a href="/soma/5/5"> fazer uma soma </a><br>
+        <a href="/mult/5/5"> fazer uma multiplicação</a><br>
+        <a href="/subt/5/5"> fazer uma subtrção</a>
+        `)
 })
 //rota dps da raiz 
 app.get('/aluno', (req, res) => {
@@ -23,11 +28,25 @@ app.get('/aluno/:nome', (req, res) => {
     res.send(`ola, ${nome}`)
 })
 
-app.get('/aluno/:a/:b', (req, res) => {
+app.get('/soma/:a/:b', (req, res) => {
     const a = Number(req.params.a)
     const b = Number(req.params.b)
     const resultado = a + b
-    res.send(`ola, ${resultado}`)
+    res.send(`resultado: ${resultado}`)
+})
+
+app.get('/mult/:a/:b', (req, res) => {
+    const a = Number(req.params.a)
+    const b = Number(req.params.b)
+    const resultado = a * b
+    res.send(`resultado:${resultado}`)
+})
+
+app.get('/subt/:a/:b', (req, res) => {
+    const a = Number(req.params.a)
+    const b = Number(req.params.b)
+    const resultado = a - b
+    res.send(`resultado:${resultado}`)
 })
 
 app.get("/status", (req,res) =>{

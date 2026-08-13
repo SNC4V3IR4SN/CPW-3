@@ -1,9 +1,16 @@
 const express = require("express")
 const app =express()
 
+app.use((req,res, next) => {
+    console.log("acesso:", req.method, req.url)
+    next()
+})
+
 //rota raiz a primeira
-app.get('/', (req, res) => {
-    res.send("bem vindo pae")
+app.get('/', (req, res) => { 
+    res.send(`<h1>Menu</h1>
+        <a href="aluno/gabriel"> Ir para aluno</a><br>
+        <a href="/status"> Ir para status</a>`)
 })
 //rota dps da raiz 
 app.get('/aluno', (req, res) => {
@@ -21,6 +28,15 @@ app.get('/aluno/:a/:b', (req, res) => {
     const b = Number(req.params.b)
     const resultado = a + b
     res.send(`ola, ${resultado}`)
+})
+
+app.get("/status", (req,res) =>{
+    res.json({
+        servidor:"online",
+        disciplina:"LP3",
+        professora: "Milena",
+        hora: new Date().toLocaleString()
+    })
 })
 
 app.listen(3000, () => {

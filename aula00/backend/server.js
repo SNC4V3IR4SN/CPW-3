@@ -8,8 +8,8 @@ app.use((req,res, next) => {
 
 //rota raiz a primeira
 app.get('/', (req, res) => { 
-    res.send(`<h1>Bem vindo pae</h1>
-        <h2>Menu</h2>
+    res.send(`<h1>Menu</h1>
+        <a href="/inicio"> Ir para o inicio</a><br>
         <a href="aluno/gabriel"> Ir para aluno</a><br>
         <a href="/status"> Ir para status</a><br>
         <a href="/soma/5/5"> fazer uma soma </a><br>
@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
 //rota dps da raiz 
 app.get('/aluno', (req, res) => {
     res.send('rota ok')
+})
+
+app.get('/inicio', (req, res) => {
+    res.send('bem vindo pae ')
 })
 
 //rota dinamica

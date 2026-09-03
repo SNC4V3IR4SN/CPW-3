@@ -1,0 +1,4 @@
+ana silva, 9.5, sistemas para internet 
+bruno costa, 7.0, sistemas para internet
+carlos souza, 8.5, redes de computadores
+receba, 12, futebol 

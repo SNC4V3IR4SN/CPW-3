@@ -1,0 +1,46 @@
+CPW 3
+	
+	JWT--> JSON WEB TOKEN ---> HEADER .PAYLOAD .SIGNATURE
+	BOLA/IDOR ---> OBJETO ---> ID/UUID ---> URL 
+	RFLA ---> FUNCTION {ADMIN}
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+métodos http                                          valor da prova=6
+C post                                                parte teórica = 2
+R get                                                  parte teórica = 4
+U put 
+D delete                                              
+
+Códigos http
+
+200 = ok
+201 = post - criou
+404 = não encontrado 
+500 = erro de servidor 
+
+
+nome do servidor. método('/rota req, res) {
+res
+}
+
+exemplo JSON 
+[
+{"id" : 1,}
+{"nome" : "Milena"}
+]
+
+transferir para texto(.txt) bruto
+json.parse()
+json.strinfy()
+
+
+fs.writeFile()
+2x 
+fs.appendfile()
+fs.unlike()
+
+filter --> retorna +1 objeto 
+find --> retorna 1 objeto  
+

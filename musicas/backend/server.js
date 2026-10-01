@@ -18,6 +18,7 @@ app.get('/musicas', (req, res) => {
     res.json(musicas)
 })
 
+
 // busca por nota
 app.get('/musicas/nota/:nota', (req, res) => {
     const nota = Number(req.params.nota)

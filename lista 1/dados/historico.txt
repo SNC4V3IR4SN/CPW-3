@@ -1,0 +1,5 @@
+teste do get JOGO CADASTRADO: GTA V
+JOGO ATUALIZADO: GTA V atualizado
+JOGO REMOVIDO: GTA V atualizado
+JOGO CADASTRADO: The Witcher 3
+JOGO REMOVIDO: The Witcher 3

@@ -1,0 +1,17 @@
+{
+  "name": "ponto-extra-p1",
+  "version": "1.0.0",
+  "description": "* **`app`**: representa a aplicação criada com o Express. É usada para configurar o servidor e suas rotas.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <div class="icone">✉</div>
+
+            <h1>Bem-vindo!</h1>
+            <p>Informe seu e-mail para receber o código de acesso.</p>
+
+            <form action="/login" method="post">
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="seuemail@gmail.com"
+                    required
+                >
+
+                <button type="submit">Enviar código</button>
+            </form>
+
+            <p class="rodape">Acesso seguro por e-mail</p>
+        </section>
+    </main>
+</body>
+</html>

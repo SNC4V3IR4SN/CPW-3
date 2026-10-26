@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar código | Meu Sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <div class="icone">🔐</div>
+
+            <h1>Confirme seu acesso</h1>
+            <p>Digite o código de quatro dígitos que enviamos para seu e-mail.</p>
+
+            <form action="/confirmar" method="post">
+                <label for="codigo">Código de confirmação</label>
+
+                <input
+                    type="text"
+                    name="codigo"
+                    id="codigo"
+                    placeholder="0000"
+                    inputmode="numeric"
+                    pattern="[0-9]{4}"
+                    maxlength="4"
+                    autocomplete="one-time-code"
+                    required
+                >
+
+                <button type="submit">Confirmar código</button>
+            </form>
+
+            <a class="link" href="/login">Voltar ao início</a>
+        </section>
+    </main>
+</body>
+</html>

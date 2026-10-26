@@ -1,0 +1,251 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #080e1c, #142747, #10172a);
+    color: #f1f5f9;
+    min-height: 100vh;
+}
+
+/* Centraliza o formulário na tela */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Caixa do login e da confirmação */
+.card {
+    width: 100%;
+    max-width: 420px;
+    padding: 38px;
+    background: rgba(19, 32, 56, 0.95);
+    border: 1px solid #334766;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.icone {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #2563eb, #6366f1);
+    font-size: 30px;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.card > p {
+    color: #a9b8cf;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* Campos do formulário */
+form label {
+    display: block;
+    color: #dbeafe;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background-color: #0c172b;
+    border: 1px solid #3b4d6a;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #71829d;
+}
+
+form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Botão principal */
+form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(59, 130, 246, 0.3);
+}
+
+.card .rodape {
+    color: #8192ac;
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #93c5fd;
+}
+
+/* Cabeçalho do dashboard */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: #0b1324;
+    border-bottom: 1px solid #263752;
+}
+
+.topo h2 {
+    font-size: 22px;
+    color: #f1f5f9;
+}
+
+.botao-sair {
+    background-color: #991b1b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 9px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-sair:hover {
+    background-color: #dc2626;
+}
+
+/* Conteúdo do dashboard */
+.dashboard {
+    width: 86%;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.boas-vindas {
+    margin-bottom: 35px;
+}
+
+.status {
+    display: inline-block;
+    color: #4ade80;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.boas-vindas h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.boas-vindas p {
+    color: #a9b8cf;
+    line-height: 1.7;
+}
+
+/* Cartão do dashboard */
+.painel {
+    padding: 30px;
+    background: rgba(19, 32, 56, 0.95);
+    border: 1px solid #334766;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.painel-icone {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #123b32;
+    color: #4ade80;
+    font-size: 26px;
+}
+
+.painel h2 {
+    margin-bottom: 12px;
+}
+
+.painel p {
+    color: #a9b8cf;
+    line-height: 1.7;
+}
+
+/* Rodapé */
+footer {
+    color: #8192ac;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 45px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    .card {
+        padding: 28px 23px;
+    }
+
+    .card h1 {
+        font-size: 25px;
+    }
+
+    .topo {
+        padding: 18px 5%;
+    }
+
+    .dashboard {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .boas-vindas h1 {
+        font-size: 27px;
+    }
+
+    .painel {
+        padding: 24px;
+    }
+}
